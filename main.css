@@ -1,0 +1,304 @@
+/* COLOR PALETTE:
+--air-superiority-blue: #70a6caff;
+--blue-gray: #6f9bcdff;
+--united-nations-blue: #6d91cfff;
+--glaucous: #6c86d2ff;
+--glaucous-2: #6a7bd4ff; */
+
+body {
+  background-color: #6d91cfff;
+}
+
+#welcomePage {
+  text-align: center;
+  margin: 10px;
+  padding-top: 10em;
+  padding-bottom: 10em;
+}
+#welcomePage .btn {
+  background-color: white;
+  text-align: center;
+}
+
+#welcomePage2 {
+  padding-top: 14vh;
+  text-align: center;
+}
+#welcomePage2 h4 {
+  padding: 1vh;
+}
+#welcomePage2 .container{
+  padding-left: 33vw;
+}
+
+a{
+  color: rgb(175, 188, 255);
+}
+
+/* NAVBAR */
+.navbar-nav {
+  flex-direction: row;
+  font-size: 2vw;
+}
+.nav-item {
+  padding-right: 1.35em;
+  padding-left: 1.35em;
+}
+.dropdown-menu {
+  left: 4vw;
+  min-width: inherit;
+}
+.dropdown-item {
+  font-size: 1.5vw;
+  text-align: center;
+}
+.navbar {
+  background-color: #6a7bd4ff;
+}
+.nav.navbar-nav ul {
+  align-items: center;
+}
+.nav.navbar-nav li a {
+  color: darkslateblue;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+#navhead {
+  font-size: 3vw;
+  color:rgb(190, 213, 252);
+}
+
+#searchTitle {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.group1 {
+  width: 500px;
+  margin: auto;
+  place-items: center;
+}
+
+.group2 {
+  width: 300px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.btn-outline-primary {
+  background-color: #6c86d2ff;
+  color: black;
+}
+
+.containerBox {
+  margin-top: 40px;
+  width: 1500px;
+  row-gap: 1em;
+  column-gap: 20px;
+}
+
+.containerBox ul {
+  margin: 50px;
+}
+
+.containerBox ul li {
+  width: 400px;
+  height: 300px;
+  background-color: #6f9bcdff;
+  border-style: solid;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+#box1, #box2, #box3, #box4, #box5 {
+  text-align: center;
+}
+
+#box4 {
+  margin-left: 230px;
+}
+
+#schoolTitle {
+  margin-bottom: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.schoolText {
+  margin-top: 40px;
+  width: 1500px;
+  row-gap: 1em;
+  column-gap: 20px;
+}
+
+.schoolText ul {
+  margin: 50px;
+}
+
+.schoolText ul li {
+  width: 600px;
+  height: 300px;
+  background-color: #6f9bcdff;
+  border-style: solid;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+#box6, #box8 {
+  margin-left: 40px;
+}
+
+.register{
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.register1{
+  padding: 5px;
+}
+
+ #rbtn1{
+  background-color:#6c86d2ff;
+  border:2px solid #70a6caff;
+  margin: 10px;
+  position:absolute;
+  left:30%;
+ }
+
+ #rbtn2{
+   position:absolute;
+   left:60%;
+ }
+
+ #img1{
+   position:absolute;
+   top:10%;
+   left:5%;
+   width:50%;
+ }
+
+.lbtn{
+  background-color:#6c86d2ff;
+  border:1px solid #70a6caff;
+  margin-left:2px;
+}
+
+.lbtn:hover{
+  background-color: #70a6caff;
+  border-color:#6d91cfff;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+}
+
+.hf{
+  font-size:1.5rem;
+  font-weight: bold;
+}
+
+.df{
+  font-size:1.2rem;
+}
+
+.login{
+  position: absolute;
+  top:30%;
+}
+
+
+ul {list-style-type: none;}
+
+.tas{list-style-type: disc}
+.h2{text-align:center;}
+.col {
+  float: left;
+  width:50%;
+}
+
+.col2{
+  float:left;
+  width:50%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.head {
+  color: rgb(63, 86, 126);
+  text-align: center;
+  font-size: 50px;
+}
+
+.interview-schedular{
+  width: 300px;
+  margin:1;
+  padding: 1px 0;
+  text-align: left;
+}
+
+.interview-schedular li{
+  display: inline-block;
+  color: rgb(31, 41, 90); 
+  text-align: left;
+
+}
+
+.school-list { 
+  margin: 200;
+  padding: 20px 0;
+}
+
+.school-list li{
+  display: inline-block;
+  color: rgb(31, 41, 90); 
+  text-align: center;
+  width: 13.6%;
+  width: 200px;
+  height: 50px;
+}
+
+button {
+  background-color: rgb(136, 141, 167);
+  outline-color: #000;
+}
+
+.results {
+  margin: 20;
+  padding: 20px 0;
+}
+
+.results li{
+  display:inline-flex;
+  text-align: center;
+  width: 20%;
+}
+
+.form-control  {
+  border: none;
+  color: black;
+} 

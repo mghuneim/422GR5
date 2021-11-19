@@ -1,0 +1,44 @@
+<!--LOGIN Page / NO HEADER ON THIS PAGE-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>AFMSS - Login</title>
+
+    <!-- Load style sheets -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body id="loginPage">
+    <h1 class="text-center">Application for Medical School Students</h1>
+    <form action="welcome.html">
+      <table class="table table-sm text-center login table-borderless">
+        <tr>
+          <!-- placeholders -->
+          <td><label for="usrname">Username:</label>
+            <input type="text" id="usrname" value="Bob" required></td> 
+        </tr>
+        <tr>
+          <td><label for="pwd">Password:</label>
+            <input type="password" id="pwd" value="password" required></td>
+        </tr>
+        <tr>
+          <td>
+            <button class="lbtn">Sign In</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Forgot Password?
+            <a href="">Click here</a>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title> <!--ADD TITLE: AFMSS - (page name)-->
+
+    <!-- Load style sheets -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body> <!--GIVE ID-->
+    <!--NAVBAR BEGIN-->
+    <h2 id="navhead" style="text-align: center; letter-spacing: 0.3em;">Application for Medical School Students</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div id="navbarNavDropdown">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="welcome.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="SchoolsDropdownNav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Schools<span class="sr-only">(current)</span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="SchoolsDropdownNav">
+                <a class="dropdown-item" href="search.html">Search</a>
+                <a class="dropdown-item" href="list.html">List</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="AppsDropdownNav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Applications
+                </a>
+                <div class="dropdown-menu" aria-labelledby="AppsDropdownNav">
+                  <a class="dropdown-item" href="essays.html">Essays</a>
+                  <a class="dropdown-item" href="decisions.html">Decisions</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="DocumentsDropdownNav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Documents
+                </a>
+                <div class="dropdown-menu" aria-labelledby="DocumentsDropdownNav">
+                  <a class="dropdown-item" href="forms.html">Forms</a>
+                  <a class="dropdown-item" href="letters.html">Letters</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="PlannerDropdownNav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Planner
+                </a>
+                <div class="dropdown-menu" aria-labelledby="PlannerDropdownNav">
+                  <a class="dropdown-item" href="calendar.html">Calendar</a>
+                  <a class="dropdown-item" href="deadlines.html">Deadlines</a>
+                  <a class="dropdown-item" href="tasks.html">Tasks</a>
+                </div>
+              </li>
+              <li class="nav-item" style="padding-top: 0.6vw;">
+                Hello, Bob. <i class="bi bi-person-circle"></i> <!-- placeholder user name -->
+              </li>
+          </ul>
+        </div>
+    </nav>
+    <table class="table table-borderless text-center">
+      <tr>
+        <td><h2>Essays:</h2></td>
+      </tr>
+      <tr class="hf">
+        <td>School Names:</th>
+        <td>Status:</th>
+      </tr>
+      <tr class="df">
+        <td>Loyoler</td>
+        <td>Not Yet Submitted
+          <button class="lbtn" onclick="location.href='essays1.html'">Upload Essays</button></td>
+      </tr>
+      <tr class="df">
+        <td>UID</td>
+        <td>Submitted
+          <button class="lbtn"  onclick="location.href='essays1.html'">View Essays</button></td>
+      </tr>
+      <tr class="df">
+        <td>DePow</td>
+        <td>Submitted
+          <button class="lbtn"  onclick="location.href='essays1.html'">View Essays</button></td>
+      </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <!--NAVBAR END-->
+    </body>
+</html>
