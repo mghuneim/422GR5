@@ -302,3 +302,26 @@ button {
   border: none;
   color: black;
 } 
+
+/* CALENDAR */ /*did you want the bg color to be #70a6caff ?*/
+#dates td{
+  font-size: xx-small;
+  vertical-align: top;
+  font-weight: bold;
+  border-style: solid;
+  border-color: #706CFF;
+  border-width: 1px;
+}
+#days td{
+  text-align: center;
+  width: 110px;
+  font-size:large;
+  border-style: solid;
+  border-color: #706CFF;
+  border-width: 1px;
+}
+#calHead td{
+  text-align: center;
+  background-color: #706CFF;
+  width: 110px;
+}

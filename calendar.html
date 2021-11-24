@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="main.css" />
   </head>
 
-  <body> <!--GIVE ID-->
+  <body>
     <!--NAVBAR BEGIN-->
     <h2 id="navhead" style="text-align: center; letter-spacing: 0.3em;">Application for Medical School Students</h2>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -72,58 +72,58 @@
     
     
     <!--calendar--> 
-    <table border='1' cellspacing='0' cellpadding='0' align=center bordercolor=#70a6caff><tr height='110'><td>
-      <table cellspacing='0' cellpadding='1' align=center width='770' border='1' bordercolor=#70a6caff><tr>
-        <td align=center bgcolor='#70a6caff' width='110'> 
-        <font size='3'  > <b><<</b> </font> </td>  <!--left arrow-->
-        <td colspan=5 align=center bgcolor='#70a6caff' width='550'><font size='5'  > 
-           november 2021 </font>  </td> <!--month name-->
-        <td  align=center bgcolor='#70a6caff'  width='110'> <!--right arrow-->
-        <font size='3'  > <b>>></b> </font></td></tr>
-        <tr  height='20'> 
-          <td align=center width='110'> <font size='4'> sunday </font></td>
-          <td align=center width='110'><font size='4'  > monday </font></td>
-          <td align=center width='110'><font size='4'  > tuesday </font></td>
-          <td align=center width='110'><font size='4'  > wednesday </font></td>
-          <td align=center width='110'><font size='4'  > thursday </font></td>
-          <td align=center width='110'><font size='4'  > friday </font></td>
-          <td align=center width='110'><font size='4'  > saturday </font></td></tr>
-        <tr height='80'> <td> </td> 
-        <td valign=top><font size='1'  > <b>1</b>   <br> </font> </td>
-        <td valign=top><font size='1'  ><b>2</b> <br> UID primary application deadline </font></td>
-        <td valign=top><font size='1'  ><b>3</b> <br> </font></td>
-        <td valign=top><font size='1'  > <b>4</b> <br></font></td>
-        <td valign=top><font size='1'  > <b>5</b> <br></font></td>
-        <td valign=top><font size='1'  > <b>6</b> <br> </font></td></tr>
-      <tr height='80'> 
-        <td valign=top><font size='1'  > <b>7</b>  <br> </font> </td>
-        <td valign=top><font size='1'  > <b>8</b>  <br></font></td>
-        <td valign=top><font size='1'  > <b>9</b> <br></font></td>
-        <td valign=top><font size='1'  > <b>10</b> <br></font></td>
-        <td valign=top><font size='1'  > <b>11</b> <br> </font></td>
-        <td valign=top><font size='1'  > <b>12</b>  <br> Submit letters of reccomendation </font></td>
-        <td valign=top><font size='1'  > <b>13</b> <br></font></td></tr>
-      <tr height='80'>
-        <td valign=top><font size='1'  > <b>14</b>  <br></font></td>
-        <td valign=top><font size='1'  > <b>15</b> <br> </font></td>
-        <td valign=top><font size='1'  > <b>16</b>  <br></font></td>
-        <td valign=top><font size='1'  > <b>17</b> <br></font></td>
-        <td valign=top><font size='1'  > <b>18</b>  <br></font></td>
-        <td valign=top><font size='1'  > <b>19</b> <br></font></td>
-        <td valign=top><font size='1'  > <b>20</b> <br></font></td></tr>
-      <tr height='80'>
-        <td valign=top><font size='1'  > <b>21</b>  <br> </font></td>
-        <td valign=top><font size='1'  > <b>22</b> <br></font></td>
-        <td valign=top><font size='1'  > <b>23</b>  <br> </font></td>
-        <td valign=top><font size='1'  > <b>24</b> <br> </font></td>
-        <td valign=top><font size='1'  > <b>25</b>  <br> </font></td>
-        <td valign=top><font size='1'  > <b>26</b>  <br> </font></td>
-        <td valign=top><font size='1'  > <b>27</b>  <br></font></td></tr>
-      <tr height='80'>
-        <td valign=top><font size='1'  > <b>28</b>  <br></font></td>
-        <td valign=top><font size='1'  > <b>29</b>  <br></font></td>
-        <td valign=top><font size='1'  > <b>30</b>  <br></font></td></tr>
-    </table></td></tr></table>
+    <table cellspacing='0' cellpadding='0' bordercolor=#70a6caff style="margin-left: auto; margin-right: auto;"><tr height='110'><td>
+      <table cellspacing='0' cellpadding='1' width='770'>
+        <tr id="calHead">
+          <td style="font-size: medium;"><b>&#60;&#60;</b></td>  <!--left arrow-->
+          <td colspan=5 width='550' style="font-size: x-large;">november 2021</td> <!--month name-->
+          <td style="font-size: medium;"><b>&#62;&#62;</b></td><!--right arrow-->
+        </tr>
+        <tr id="days" height='20'> 
+          <td> sunday </td>
+          <td> monday</td>
+          <td> tuesday</td>
+          <td> wednesday</td>
+          <td> thursday</td>
+          <td> friday</td>
+          <td> saturday</td></tr>
+        <tr id="dates" height='80'> <td> </td> 
+        <td>1<br></td>
+        <td>2<br> UID primary application deadline </td> <!-- unbold -->
+        <td>3<br> </td>
+        <td>4<br></td>
+        <td>5<br></td>
+        <td>6<br> </td></tr>
+        <tr id="dates" height='80'> 
+          <td>7 <br> </td>
+          <td>8 <br></td>
+          <td>9<br></td>
+          <td>10<br></td>
+          <td>11<br> </td>
+          <td>12 <br> Submit letters of reccomendation </td>
+          <td>13<br></td></tr>
+        <tr id="dates" height='80'>
+          <td>14 <br></td>
+          <td>15<br> </td>
+          <td>16 <br></td>
+          <td>17<br></td>
+          <td>18 <br></td>
+          <td>19<br></td>
+          <td>20<br></td></tr>
+        <tr id="dates" height='80'>
+          <td>21 <br> </td>
+          <td>22<br></td>
+          <td>23 <br> </td>
+          <td>24<br> </td>
+          <td>25 <br> </td>
+          <td>26 <br> </td>
+          <td>27 <br></td></tr>
+        <tr id="dates" height='80'>
+          <td>28 <br></td>
+          <td>29 <br></td>
+          <td>30 <br></td></tr>
+      </table></td></tr>
+    </table>
     <!--calendar end-->
     
     </body>
