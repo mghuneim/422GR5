@@ -24,11 +24,21 @@ body {
   padding-top: 14vh;
   text-align: center;
 }
-#welcomePage2 h4 {
+#welcomePage2 h3 {
   padding: 1vh;
+  font-size: 2vw;
+}
+#welcomePage2 h1 {
+  font-size: 5vw;
+}
+#welcomePage2 h2 {
+  font-size: 3.5vw;
 }
 #welcomePage2 .container{
-  padding-left: 33vw;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 a{
@@ -320,8 +330,72 @@ button {
   border-color: #706CFF;
   border-width: 1px;
 }
+#dates p{
+  font-weight:600;
+}
 #calHead td{
   text-align: center;
   background-color: #706CFF;
   width: 110px;
 }
+
+/* DATEPICKER */
+.ui-datepicker{
+  padding-top: 10px;
+  background-color: transparent;
+  width: 60vw;
+  margin-left: auto; 
+  margin-right: auto;
+  font-family: Roboto;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+  height: auto;
+}
+.ui-datepicker .ui-datepicker-header{
+  background-color: #6a7bd4ff;
+}
+.ui-datepicker .ui-datepicker-title{
+  font-family: Roboto;
+}
+.ui-datepicker table{
+  width: 59.5vw;
+  height: 70vh;
+  border-style: solid;
+  border-color: #6a7bd4ff;
+  border-width: 5px;
+}
+.ui-widget.ui-widget-content, .ui-widget-header {
+  border-width: 0px;
+  font-family: Roboto;
+}
+.ui-widget{
+  font-family: Roboto;
+}
+.ui-state-default{
+  height:100%;
+  border-style: solid;
+  border-color: #6a7bd4ff;
+  border-width: 1px;
+}
+.ui-datepicker th{
+  border-style: solid;
+  border-color: #6a7bd4fF;
+  border-width: 1px;
+  background-color: rgb(124, 155, 207);
+}
+.ui-datepicker-current-day .ui-state-active{
+  background-color:rgb(190, 213, 252);
+  color: white;
+}
+.ui-datepicker-today a.ui-state-highlight{
+  background-color:#6a7bd4fF;
+  color: white;
+}
+.ui-datepicker td a:after
+{
+  content: "today";
+  display: block;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+}  
