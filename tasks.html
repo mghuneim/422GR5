@@ -120,17 +120,34 @@
       <div class="col">
         <h2>To-Do</h2>
         <ul class="tas">
-          <li>Gather recommendation letters</li>
-          <li>Finish Partmouth University's essays </li>
-          <li>Enter GPA</li>
-          <li>Prep for University of Northern Dalifornia Interview</li>
-          <li>Finish essay prompt #1 for University of Clorida secondary application</li>
-          <li>Finish Depar University's essay prompt #3 for the primary applicaiton</li>
-          <li>Look into Loyoler University's masters program as backup</li>
-          <li>Order transcript</li>
         </ul>
+        <div class="input-group mb-3">
+          <input id="taskText" type="text" class="form-control" placeholder="Write a task..." aria-label="Add a task" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id="addTask" class="btn btn-outline-secondary" type="button">Add</button>
+          </div>
+        </div>
       </div>
     </div>
-    
+    <script>
+      $("#addTask").click(function(){
+        var task = $("#taskText").val();
+        if(task != ""){
+          $(".tas").append('<li>'+task+'</li>');
+          $("#taskText").val("");
+          $("#taskText").focus();
+        }
+      });
+      $(document).on('keypress',function(e) {
+        if(e.which == 13) {
+          var task = $("#taskText").val();
+          if(task != ""){
+            $(".tas").append('<li>'+task+'</li>');
+            $("#taskText").val("");
+            $("#taskText").focus();
+          }
+        }
+      });
+    </script>
     </body>
 </html>

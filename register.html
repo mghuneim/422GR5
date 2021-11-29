@@ -21,18 +21,19 @@
         <tr class="register1">
           <td><label for="usrname">Username:</label></td>
           <td><input type="text" id="usrname" value="" required></td>
+          <td><input id="user" class="form-control" type="text" required></td>
         </tr>
         <tr class="register1">
           <td><label for="email">Email:</label></td>
-          <td><input type="email" value="Bob@tmail.com" id="email" required></td>
+          <td><input type="email" id="email" required></td>
         </tr>
         <tr class="register1">
           <td><label for="npwd">Password:</label></td>
-          <td><input type="password" value="password" id="npwd" required></td>
+          <td><input type="password" id="npwd" required></td>
         </tr>
         <tr class="register1">
           <td><label for="pwd">Confirm Password:</label></td>
-          <td><input type="password" value="password" id="pwd"></td>
+          <td><input type="password" id="pwd"></td>
         </tr>
         <tr class="register1">
           <td><button id="rbtn1">Register</button></td>
@@ -48,5 +49,14 @@
         });
       </script>
     </form>
+    <script>
+      //USE HTML5 to store values
+      // var user = document.querySelector('#user').value;
+      // console.log(user);
+      // localStorage.setItem("username", user);
+      
+      // localStorage.email = $("#email").val(); do we really need to store these...
+      // localStorage.pwd = $("#npwd").val();
+    </script>
   </body>
 </html>
