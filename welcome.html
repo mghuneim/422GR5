@@ -70,7 +70,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <!--NAVBAR END-->
     <div id="welcomePage2">
-      <h1>Welcome, Bob.</h1><br>
+      <h1 id="h1">
+      </h1><br>
       <h2>Get Started:</h2><br>
       <div class="container" >
         <div class="row">
@@ -90,4 +91,7 @@
         </div>
     </div>
     </body>
+    <script>
+      document.getElementById("h1").innerHTML="Welcome"+" "+localStorage.getItem("username");
+    </script>
 </html>

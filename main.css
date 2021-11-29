@@ -185,6 +185,11 @@ a{
   left:30%;
  }
 
+ #rbtn1:hover{
+  background-color: #70a6caff;
+  border-color:#6d91cfff;
+}
+
  #rbtn2{
    position:absolute;
    left:60%;

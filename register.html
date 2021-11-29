@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css"
     />
-
     <link rel="stylesheet" href="main.css" />
   </head>
 
@@ -21,7 +20,7 @@
       <table class="register">
         <tr class="register1">
           <td><label for="usrname">Username:</label></td>
-          <td><input type="text" value="Bob"required></td>
+          <td><input type="text" id="usrname" value="" required></td>
         </tr>
         <tr class="register1">
           <td><label for="email">Email:</label></td>
@@ -42,6 +41,12 @@
           <td id="rbtn2" style="padding-left: 5px; font-size: small;">Already have an account?<a href="login.html"> Sign In</a></td>
         </tr>
       </table>
+      <script>
+        document.getElementById("usrname").addEventListener("change",function(){
+          username=document.getElementById("usrname").value;
+          localStorage.setItem("username",username);
+        });
+      </script>
     </form>
   </body>
 </html>
