@@ -10,6 +10,11 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryui.com/resources/demos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css" />
   </head>
 
@@ -72,13 +77,13 @@
     
     
     <!--calendar--> 
-    <table cellspacing='0' cellpadding='0' bordercolor=#70a6caff style="margin-left: auto; margin-right: auto;"><tr height='110'><td>
+    <!-- <table cellspacing='0' cellpadding='0' bordercolor=#70a6caff style="margin-left: auto; margin-right: auto;"><tr height='110'><td>
       <table cellspacing='0' cellpadding='1' width='770'>
-        <tr id="calHead">
-          <td style="font-size: medium;"><b>&#60;&#60;</b></td>  <!--left arrow-->
-          <td colspan=5 width='550' style="font-size: x-large;">november 2021</td> <!--month name-->
-          <td style="font-size: medium;"><b>&#62;&#62;</b></td><!--right arrow-->
-        </tr>
+        <tr id="calHead"> -->
+          <!-- <td style="font-size: medium;"><b>&#60;&#60;</b></td>  left arrow
+          <td colspan=5 width='550' style="font-size: x-large;">november 2021</td> month name
+          <td style="font-size: medium;"><b>&#62;&#62;</b></td>right arrow -->
+        <!-- </tr>
         <tr id="days" height='20'> 
           <td> sunday </td>
           <td> monday</td>
@@ -89,7 +94,7 @@
           <td> saturday</td></tr>
         <tr id="dates" height='80'> <td> </td> 
         <td>1<br></td>
-        <td>2<br> UID primary application deadline </td> <!-- unbold -->
+        <td>2<br><p>UID primary application deadline</p></td>
         <td>3<br> </td>
         <td>4<br></td>
         <td>5<br></td>
@@ -100,7 +105,7 @@
           <td>9<br></td>
           <td>10<br></td>
           <td>11<br> </td>
-          <td>12 <br> Submit letters of reccomendation </td>
+          <td>12 <br><p>Submit letters of reccomendation</p></td>
           <td>13<br></td></tr>
         <tr id="dates" height='80'>
           <td>14 <br></td>
@@ -123,8 +128,24 @@
           <td>29 <br></td>
           <td>30 <br></td></tr>
       </table></td></tr>
-    </table>
+    </table> -->
     <!--calendar end-->
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#datepicker" ).datepicker();
+      } );
+
+      
+    </script>
+    <div id="datepicker"></div>
+<!-- get message from elsewhere thru html5 storage
+  find td according to specified date
+  class that td
+  add css rule for that class    
+    OR
+  on clicking the day show the task
+   -->
     </body>
 </html>
