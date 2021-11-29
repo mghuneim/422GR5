@@ -92,13 +92,6 @@
           </div>
         </div>
     </div>
-    <script>
-      // document.getElementById("h1").innerHTML = "Welcome, "+localStorage.username +".";
-      // window.addEventListener('storage', function(event) {
-      //   document.getElementById("h1").innerHTML = "Welcome, "+ event.newValue+".";
-      // }, false);
-      // document.getElementById("h1").innerHTML = "Welcome, "+localStorage.username +".";
-    </script>
     </body>
     <script>
       document.getElementById("h1").textContent="Welcome"+" "+localStorage.getItem("username");
@@ -106,5 +99,6 @@
       i=document.createElement("i");
       i.className="bi bi-person-circle";
       document.getElementById("li").appendChild(i);
+      document.getElementById("h1").innerHTML="Welcome, "+localStorage.getItem("username")+".";
     </script>
 </html>
