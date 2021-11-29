@@ -59,8 +59,9 @@
                   <a class="dropdown-item" href="tasks.html">Tasks</a>
                 </div>
               </li>
-              <li class="nav-item" style="padding-top: 0.6vw;">
-                Hello, Bob. <i class="bi bi-person-circle"></i> <!-- placeholder user name -->
+              <li class="nav-item" id="li" style="padding-top: 0.6vw;">
+                 <!-- placeholder user name -->
+                 <!-- <i class="bi bi-person-circle"></i> -->
               </li>
           </ul>
         </div>
@@ -100,6 +101,10 @@
     </script>
     </body>
     <script>
-      document.getElementById("h1").innerHTML="Welcome"+" "+localStorage.getItem("username");
+      document.getElementById("h1").textContent="Welcome"+" "+localStorage.getItem("username");
+      document.getElementById("li").textContent="Hello"+" "+localStorage.getItem("username")+".";
+      i=document.createElement("i");
+      i.className="bi bi-person-circle";
+      document.getElementById("li").appendChild(i);
     </script>
 </html>
