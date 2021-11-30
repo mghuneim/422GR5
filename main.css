@@ -34,14 +34,14 @@ body {
 #welcomePage2 h2 {
   font-size: 3.5vw;
 }
-#welcomePage2 .container{
+#welcomePage2 .container {
   width: 30%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
 }
 
-a{
+a {
   color: rgb(175, 188, 255);
 }
 
@@ -75,7 +75,7 @@ a{
 }
 #navhead {
   font-size: 3vw;
-  color:rgb(190, 213, 252);
+  color: rgb(190, 213, 252);
 }
 
 #searchTitle {
@@ -97,6 +97,7 @@ a{
 }
 
 .btn-outline-primary {
+  position: relative;
   background-color: #6c86d2ff;
   color: black;
 }
@@ -122,7 +123,11 @@ a{
   margin-bottom: 20px;
 }
 
-#box1, #box2, #box3, #box4, #box5 {
+#box1,
+#box2,
+#box3,
+#box4,
+#box5 {
   text-align: center;
 }
 
@@ -162,55 +167,56 @@ a{
   margin-bottom: 20px;
 }
 
-#box6, #box8 {
+#box6,
+#box8 {
   margin-left: 40px;
 }
 
-.register{
+.register {
   position: absolute;
   top: 40%;
   left: 70%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.register1{
+.register1 {
   padding: 5px;
 }
 
- #rbtn1{
-  background-color:#6c86d2ff;
-  border:2px solid #70a6caff;
+#rbtn1 {
+  background-color: #6c86d2ff;
+  border: 2px solid #70a6caff;
   margin: 10px;
-  position:absolute;
-  left:30%;
- }
-
- #rbtn1:hover{
-  background-color: #70a6caff;
-  border-color:#6d91cfff;
+  position: absolute;
+  left: 30%;
 }
 
- #rbtn2{
-   position:absolute;
-   left:60%;
- }
-
- #img1{
-   position:absolute;
-   top:10%;
-   left:5%;
-   width:50%;
- }
-
-.lbtn{
-  background-color:#6c86d2ff;
-  border:1px solid #70a6caff;
-  margin-left:2px;
+#rbtn1:hover {
+  background-color: #70a6caff;
+  border-color: #6d91cfff;
 }
 
-.lbtn:hover{
+#rbtn2 {
+  position: absolute;
+  left: 60%;
+}
+
+#img1 {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 50%;
+}
+
+.lbtn {
+  background-color: #6c86d2ff;
+  border: 1px solid #70a6caff;
+  margin-left: 2px;
+}
+
+.lbtn:hover {
   background-color: #70a6caff;
-  border-color:#6d91cfff;
+  border-color: #6d91cfff;
 }
 
 .table-borderless > tbody > tr > td,
@@ -219,36 +225,41 @@ a{
 .table-borderless > tfoot > tr > th,
 .table-borderless > thead > tr > td,
 .table-borderless > thead > tr > th {
-    border: none;
+  border: none;
 }
 
-.hf{
-  font-size:1.5rem;
+.hf {
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
-.df{
-  font-size:1.2rem;
+.df {
+  font-size: 1.2rem;
 }
 
-.login{
+.login {
   position: absolute;
-  top:30%;
+  top: 30%;
 }
 
+ul {
+  list-style-type: none;
+}
 
-ul {list-style-type: none;}
-
-.tas{list-style-type: disc}
-.h2{text-align:center;}
+.tas {
+  list-style-type: disc;
+}
+.h2 {
+  text-align: center;
+}
 .col {
   float: left;
-  width:50%;
+  width: 50%;
 }
 
-.col2{
-  float:left;
-  width:50%;
+.col2 {
+  float: left;
+  width: 50%;
 }
 
 .column {
@@ -269,28 +280,27 @@ ul {list-style-type: none;}
   font-size: 50px;
 }
 
-.interview-schedular{
+.interview-schedular {
   width: 300px;
-  margin:1;
+  margin: 1;
   padding: 1px 0;
   text-align: left;
 }
 
-.interview-schedular li{
+.interview-schedular li {
   display: inline-block;
-  color: rgb(31, 41, 90); 
+  color: rgb(31, 41, 90);
   text-align: left;
-
 }
 
-.school-list { 
+.school-list {
   margin: 200;
   padding: 20px 0;
 }
 
-.school-list li{
+.school-list li {
   display: inline-block;
-  color: rgb(31, 41, 90); 
+  color: rgb(31, 41, 90);
   text-align: center;
   width: 13.6%;
   width: 200px;
@@ -307,100 +317,100 @@ button {
   padding: 20px 0;
 }
 
-.results li{
-  display:inline-flex;
+.results li {
+  display: inline-flex;
   text-align: center;
   width: 20%;
 }
 
-.form-control  {
+.form-control {
   border: none;
   color: black;
-} 
+}
 
 /* CALENDAR */ /*did you want the bg color to be #70a6caff ?*/
-#dates td{
+#dates td {
   font-size: xx-small;
   vertical-align: top;
   font-weight: bold;
   border-style: solid;
-  border-color: #706CFF;
+  border-color: #706cff;
   border-width: 1px;
 }
-#days td{
+#days td {
   text-align: center;
   width: 110px;
-  font-size:large;
+  font-size: large;
   border-style: solid;
-  border-color: #706CFF;
+  border-color: #706cff;
   border-width: 1px;
 }
-#dates p{
-  font-weight:600;
+#dates p {
+  font-weight: 600;
 }
-#calHead td{
+#calHead td {
   text-align: center;
-  background-color: #706CFF;
+  background-color: #706cff;
   width: 110px;
 }
 
 /* DATEPICKER */
-.ui-datepicker{
+.ui-datepicker {
   padding-top: 10px;
   background-color: transparent;
   width: 60vw;
-  margin-left: auto; 
+  margin-left: auto;
   margin-right: auto;
   font-family: Roboto;
 }
 .ui-datepicker .ui-datepicker-buttonpane button {
   height: auto;
 }
-.ui-datepicker .ui-datepicker-header{
+.ui-datepicker .ui-datepicker-header {
   background-color: #6a7bd4ff;
 }
-.ui-datepicker .ui-datepicker-title{
+.ui-datepicker .ui-datepicker-title {
   font-family: Roboto;
 }
-.ui-datepicker table{
+.ui-datepicker table {
   width: 59.5vw;
   height: 70vh;
   border-style: solid;
   border-color: #6a7bd4ff;
   border-width: 5px;
 }
-.ui-widget.ui-widget-content, .ui-widget-header {
+.ui-widget.ui-widget-content,
+.ui-widget-header {
   border-width: 0px;
   font-family: Roboto;
 }
-.ui-widget{
+.ui-widget {
   font-family: Roboto;
 }
-.ui-state-default{
-  height:100%;
+.ui-state-default {
+  height: 100%;
   border-style: solid;
   border-color: #6a7bd4ff;
   border-width: 1px;
 }
-.ui-datepicker th{
+.ui-datepicker th {
   border-style: solid;
-  border-color: #6a7bd4fF;
+  border-color: #6a7bd4ff;
   border-width: 1px;
   background-color: rgb(124, 155, 207);
 }
-.ui-datepicker-current-day .ui-state-active{
-  background-color:rgb(190, 213, 252);
+.ui-datepicker-current-day .ui-state-active {
+  background-color: rgb(190, 213, 252);
   color: white;
 }
-.ui-datepicker-today a.ui-state-highlight{
-  background-color:#6a7bd4fF;
+.ui-datepicker-today a.ui-state-highlight {
+  background-color: #6a7bd4ff;
   color: white;
 }
-.ui-datepicker td a:after
-{
+.ui-datepicker td a:after {
   content: "today";
   display: block;
   text-align: center;
   font-size: small;
   font-weight: bold;
-}  
+}
