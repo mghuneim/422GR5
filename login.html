@@ -21,11 +21,11 @@
         <tr>
           <!-- placeholders -->
           <td><label for="usrname">Username:</label>
-            <input type="text" id="usrname" value="Bob" required></td> 
+            <input type="text" id="usrname" required></td> 
         </tr>
         <tr>
           <td><label for="pwd">Password:</label>
-            <input type="password" id="pwd" value="password" required></td>
+            <input type="password" id="pwd" required></td>
         </tr>
         <tr>
           <td>
@@ -40,5 +40,11 @@
         </tr>
       </table>
     </form>
+    <script>
+      document.getElementById("usrname").addEventListener("change",function(){
+        username=document.getElementById("usrname").value;
+        localStorage.setItem("username",username);
+      });
+    </script>
   </body>
 </html>

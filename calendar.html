@@ -64,9 +64,7 @@
                   <a class="dropdown-item" href="tasks.html">Tasks</a>
                 </div>
               </li>
-              <li class="nav-item" style="padding-top: 0.6vw;">
-                Hello, Bob. <i class="bi bi-person-circle"></i> <!-- placeholder user name -->
-              </li>
+              <li id="navBob" class="nav-item" style="padding-top: 0.6vw;"></li>
           </ul>
         </div>
     </nav>
@@ -75,69 +73,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <!--NAVBAR END-->
     
-    
-    <!--calendar--> 
-    <!-- <table cellspacing='0' cellpadding='0' bordercolor=#70a6caff style="margin-left: auto; margin-right: auto;"><tr height='110'><td>
-      <table cellspacing='0' cellpadding='1' width='770'>
-        <tr id="calHead"> -->
-          <!-- <td style="font-size: medium;"><b>&#60;&#60;</b></td>  left arrow
-          <td colspan=5 width='550' style="font-size: x-large;">november 2021</td> month name
-          <td style="font-size: medium;"><b>&#62;&#62;</b></td>right arrow -->
-        <!-- </tr>
-        <tr id="days" height='20'> 
-          <td> sunday </td>
-          <td> monday</td>
-          <td> tuesday</td>
-          <td> wednesday</td>
-          <td> thursday</td>
-          <td> friday</td>
-          <td> saturday</td></tr>
-        <tr id="dates" height='80'> <td> </td> 
-        <td>1<br></td>
-        <td>2<br><p>UID primary application deadline</p></td>
-        <td>3<br> </td>
-        <td>4<br></td>
-        <td>5<br></td>
-        <td>6<br> </td></tr>
-        <tr id="dates" height='80'> 
-          <td>7 <br> </td>
-          <td>8 <br></td>
-          <td>9<br></td>
-          <td>10<br></td>
-          <td>11<br> </td>
-          <td>12 <br><p>Submit letters of reccomendation</p></td>
-          <td>13<br></td></tr>
-        <tr id="dates" height='80'>
-          <td>14 <br></td>
-          <td>15<br> </td>
-          <td>16 <br></td>
-          <td>17<br></td>
-          <td>18 <br></td>
-          <td>19<br></td>
-          <td>20<br></td></tr>
-        <tr id="dates" height='80'>
-          <td>21 <br> </td>
-          <td>22<br></td>
-          <td>23 <br> </td>
-          <td>24<br> </td>
-          <td>25 <br> </td>
-          <td>26 <br> </td>
-          <td>27 <br></td></tr>
-        <tr id="dates" height='80'>
-          <td>28 <br></td>
-          <td>29 <br></td>
-          <td>30 <br></td></tr>
-      </table></td></tr>
-    </table> -->
-    <!--calendar end-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script>
       $( function() {
         $( "#datepicker" ).datepicker();
       } );
-
-      
+      document.getElementById("navBob").innerHTML= "Hello, "+localStorage.getItem("username")+". <i class='bi bi-person-circle'></i>";      
     </script>
     <div id="datepicker"></div>
 <!-- get message from elsewhere thru html5 storage
