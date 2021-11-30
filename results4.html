@@ -94,10 +94,7 @@
               <a class="dropdown-item" href="tasks.html">Tasks</a>
             </div>
           </li>
-          <li class="nav-item" style="padding-top: 0.6vw">
-            Hello, Bob. <i class="bi bi-person-circle"></i>
-            <!-- placeholder user name -->
-          </li>
+          <li id="navBob" class="nav-item" style="padding-top: 0.6vw"></li>
         </ul>
       </div>
     </nav>
@@ -256,5 +253,11 @@
         </li>
       </ul>
     </div>
+    <script>
+      document.getElementById("navBob").innerHTML =
+        "Hello, " +
+        localStorage.getItem("username") +
+        ". <i class='bi bi-person-circle'></i>";
+    </script>
   </body>
 </html>
