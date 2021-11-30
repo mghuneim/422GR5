@@ -94,7 +94,7 @@
               <a class="dropdown-item" href="tasks.html">Tasks</a>
             </div>
           </li>
-          <li id="navBob" class="nav-item" style="padding-top: 0.6vw;"></li>
+          <li id="navBob" class="nav-item" style="padding-top: 0.6vw"></li>
         </ul>
       </div>
     </nav>
@@ -113,17 +113,9 @@
       crossorigin="anonymous"
     ></script>
     <!--NAVBAR END-->
-
-    <!--deadlines -->
-    <h1 class="head"> <br> School Search <br> </h1>  
-
-    </body>
-    <h2 id="searchTitle" style="text-align: center">
-      Use the search bar below to search for a school:
-    </h2>
     <script type="text/javascript">
       function resultsPageChoice() {
-        var input = document.getElementById("searchSchool").value;
+        var input = document.getElementById("searchSchool4").value;
 
         if (input == "loyoler") {
           location.href = "results.html";
@@ -142,19 +134,18 @@
         }
       }
     </script>
-    <div class="group1">
+    <div class="group2">
       <div class="input-group">
         <input
-          id="searchSchool"
+          id="searchSchool4"
           type="search"
           class="form-control rounded"
-          placeholder="Search"
+          placeholder="Search School"
           aria-label="Search"
           aria-describedby="search-addon"
         />
         <button
           type="button"
-          style="color: black"
           class="btn btn-outline-primary"
           onclick="resultsPageChoice();"
         >
@@ -162,8 +153,114 @@
         </button>
       </div>
     </div>
+    <h1
+      id="schoolTitle"
+      style="font-weight: bold; text-align: center; text-decoration: underline"
+    >
+      DePow Medical School - 90% Match
+    </h1>
+    <img
+      id="logo3"
+      src="schoollogo3.png"
+      alt="School Logo 3"
+      class="center"
+      style="width: 250px; height: 200px; margin-bottom: 20px"
+    />
+    <div style="text-align: center">
+      <button
+        type="button"
+        style="font-size: 24px"
+        class="btn btn-outline-primary"
+      >
+        <a style="color: black" href="essays1.html">Start Application</a>
+      </button>
+    </div>
+    <div class="schoolText">
+      <ul>
+        <li id="box6">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            Tuition and Fees
+          </h2>
+          <br />
+          <p style="font-size: 30px; text-align: center">
+            In-State Tuition: $43,000 <br />
+            Out-of-State Tuition: $55,000
+          </p>
+          <p style="font-size: 30px; text-align: center">Fees: $1,426</p>
+          <p style="font-size: 30px; text-align: center">
+            Room and Board: $13,675
+          </p>
+        </li>
+        <li id="box7">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            School Information
+          </h2>
+          <br />
+          <p style="font-size: 20px; text-align: center">
+            The Monroe School of Medicine opened in December 1894 and is
+            Chicago's oldest medical school to date. This is a highly accredited
+            school and many of Chicagoland's top doctors have studied at DePow.
+            Furthermore, this is also a Christian university. Therefore, this is
+            a rigorous but rewarding program and you will also get to network
+            and build many connections throughout your time here.
+          </p>
+        </li>
+        <li id="box8">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            Contact Information
+          </h2>
+          <br />
+          <p style="font-size: 30px; text-align: center">
+            Address: 2400 N Sheffield Ave, Chicago, IL, 60645
+          </p>
+          <p style="font-size: 30px; text-align: center">
+            Email: admissions@depowadmin.edu
+          </p>
+        </li>
+        <li id="box9">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            Extracurriculars
+          </h2>
+          <br />
+          <p style="font-size: 25px; text-align: center">
+            Required: Minimum 50 hours of community service, minimum 50 hours of
+            patient exposure over the last three to four years.
+          </p>
+          <p style="font-size: 25px; text-align: center">
+            Recommended: Any physician shadowing is preferred.
+          </p>
+        </li>
+      </ul>
+    </div>
     <script>
-      document.getElementById("navBob").innerHTML= "Hello, "+localStorage.getItem("username")+". <i class='bi bi-person-circle'></i>";
+      document.getElementById("navBob").innerHTML =
+        "Hello, " +
+        localStorage.getItem("username") +
+        ". <i class='bi bi-person-circle'></i>";
     </script>
   </body>
 </html>

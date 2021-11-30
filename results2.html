@@ -94,7 +94,7 @@
               <a class="dropdown-item" href="tasks.html">Tasks</a>
             </div>
           </li>
-          <li id="navBob" class="nav-item" style="padding-top: 0.6vw;"></li>
+          <li id="navBob" class="nav-item" style="padding-top: 0.6vw"></li>
         </ul>
       </div>
     </nav>
@@ -113,17 +113,9 @@
       crossorigin="anonymous"
     ></script>
     <!--NAVBAR END-->
-
-    <!--deadlines -->
-    <h1 class="head"> <br> School Search <br> </h1>  
-
-    </body>
-    <h2 id="searchTitle" style="text-align: center">
-      Use the search bar below to search for a school:
-    </h2>
     <script type="text/javascript">
       function resultsPageChoice() {
-        var input = document.getElementById("searchSchool").value;
+        var input = document.getElementById("searchSchool3").value;
 
         if (input == "loyoler") {
           location.href = "results.html";
@@ -142,19 +134,18 @@
         }
       }
     </script>
-    <div class="group1">
+    <div class="group2">
       <div class="input-group">
         <input
-          id="searchSchool"
+          id="searchSchool3"
           type="search"
           class="form-control rounded"
-          placeholder="Search"
+          placeholder="Search School"
           aria-label="Search"
           aria-describedby="search-addon"
         />
         <button
           type="button"
-          style="color: black"
           class="btn btn-outline-primary"
           onclick="resultsPageChoice();"
         >
@@ -162,8 +153,112 @@
         </button>
       </div>
     </div>
+    <h1
+      id="schoolTitle"
+      style="font-weight: bold; text-align: center; text-decoration: underline"
+    >
+      UID Medical School - 85% Match
+    </h1>
+    <img
+      id="logo2"
+      src="schoollogo2.png"
+      alt="School Logo 2"
+      class="center"
+      style="width: 250px; height: 200px; margin-bottom: 20px"
+    />
+    <div style="text-align: center">
+      <button
+        type="button"
+        style="font-size: 24px"
+        class="btn btn-outline-primary"
+      >
+        <a style="color: black" href="essays1.html">Start Application</a>
+      </button>
+    </div>
+    <div class="schoolText">
+      <ul>
+        <li id="box6">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            Tuition and Fees
+          </h2>
+          <br />
+          <p style="font-size: 30px; text-align: center">
+            In-State Tuition: $23,000 <br />
+            Out-of-State Tuition: $31,000
+          </p>
+          <p style="font-size: 30px; text-align: center">Fees: $1,267</p>
+          <p style="font-size: 30px; text-align: center">
+            Room and Board: $10,432
+          </p>
+        </li>
+        <li id="box7">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            School Information
+          </h2>
+          <br />
+          <p style="font-size: 20px; text-align: center">
+            The Addams School of Medicine opened in June 1964 and is a top
+            contender for medical school students when choosing schools. One of
+            the top medical schools in the nation because of the renowned Wush
+            Hopital, the Addams School of Medicine strives to be a rigorous and
+            rewarding program. This is also a top school location-wise as it
+            sits right in the heart of the Chicago loop.
+          </p>
+        </li>
+        <li id="box8">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            Contact Information
+          </h2>
+          <br />
+          <p style="font-size: 30px; text-align: center">
+            Address: 800 S Ashland Ave, Chicago, IL, 60607
+          </p>
+          <p style="font-size: 30px; text-align: center">
+            Email: admissions@uidmed.edu
+          </p>
+        </li>
+        <li id="box9">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            Extracurriculars
+          </h2>
+          <br />
+          <p style="font-size: 25px; text-align: center">
+            Minimum 50 hours of community service, minimum 100 hours of
+            physician shadowing over the last three to four years, and minimum
+            50 hours of patient exposure.
+          </p>
+        </li>
+      </ul>
+    </div>
     <script>
-      document.getElementById("navBob").innerHTML= "Hello, "+localStorage.getItem("username")+". <i class='bi bi-person-circle'></i>";
+      document.getElementById("navBob").innerHTML =
+        "Hello, " +
+        localStorage.getItem("username") +
+        ". <i class='bi bi-person-circle'></i>";
     </script>
   </body>
 </html>

@@ -94,7 +94,7 @@
               <a class="dropdown-item" href="tasks.html">Tasks</a>
             </div>
           </li>
-          <li id="navBob" class="nav-item" style="padding-top: 0.6vw;"></li>
+          <li id="navBob" class="nav-item" style="padding-top: 0.6vw"></li>
         </ul>
       </div>
     </nav>
@@ -113,17 +113,9 @@
       crossorigin="anonymous"
     ></script>
     <!--NAVBAR END-->
-
-    <!--deadlines -->
-    <h1 class="head"> <br> School Search <br> </h1>  
-
-    </body>
-    <h2 id="searchTitle" style="text-align: center">
-      Use the search bar below to search for a school:
-    </h2>
     <script type="text/javascript">
       function resultsPageChoice() {
-        var input = document.getElementById("searchSchool").value;
+        var input = document.getElementById("searchSchool5").value;
 
         if (input == "loyoler") {
           location.href = "results.html";
@@ -142,19 +134,18 @@
         }
       }
     </script>
-    <div class="group1">
+    <div class="group2">
       <div class="input-group">
         <input
-          id="searchSchool"
+          id="searchSchool5"
           type="search"
           class="form-control rounded"
-          placeholder="Search"
+          placeholder="Search School"
           aria-label="Search"
           aria-describedby="search-addon"
         />
         <button
           type="button"
-          style="color: black"
           class="btn btn-outline-primary"
           onclick="resultsPageChoice();"
         >
@@ -162,8 +153,111 @@
         </button>
       </div>
     </div>
+    <h1
+      id="schoolTitle"
+      style="font-weight: bold; text-align: center; text-decoration: underline"
+    >
+      Jarvard Medical School - 82% Match
+    </h1>
+    <img
+      id="logo4"
+      src="schoollogo4.png"
+      alt="School Logo 4"
+      class="center"
+      style="width: 250px; height: 200px; margin-bottom: 20px"
+    />
+    <div style="text-align: center">
+      <button
+        type="button"
+        style="font-size: 24px"
+        class="btn btn-outline-primary"
+      >
+        <a style="color: black" href="essays1.html">Start Application</a>
+      </button>
+    </div>
+    <div class="schoolText">
+      <ul>
+        <li id="box6">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            Tuition and Fees
+          </h2>
+          <br />
+          <p style="font-size: 30px; text-align: center">
+            In-State & Out-of-State Tuition: $71,000
+          </p>
+          <p style="font-size: 30px; text-align: center">Fees: $2,104</p>
+          <p style="font-size: 30px; text-align: center">
+            Room and Board: $14,580
+          </p>
+        </li>
+        <li id="box7">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            School Information
+          </h2>
+          <br />
+          <p style="font-size: 20px; text-align: center">
+            The Ghuneim School of Medicine opened in June 1756 and is one of the
+            oldest medical schools in the nation. With a 3.5% acceptance rate,
+            this medical school is extremely difficult to get into, therefore
+            test scores and GPAs need to be almost perfect. Once accepted, you
+            will be working extremely hard but all of the current doctors that
+            have went to Jarvard say it was a very rewarding experience.
+          </p>
+        </li>
+        <li id="box8">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            Contact Information
+          </h2>
+          <br />
+          <p style="font-size: 30px; text-align: center">
+            Address: 86 Brattle Street, Cambridge, MA, 02156
+          </p>
+          <p style="font-size: 30px; text-align: center">
+            Email: admissions@ghuneimmed.edu
+          </p>
+        </li>
+        <li id="box9">
+          <h2
+            style="
+              font-weight: bold;
+              text-align: center;
+              text-decoration: underline;
+            "
+          >
+            Extracurriculars
+          </h2>
+          <br />
+          <p style="font-size: 25px; text-align: center">
+            Minimum 50 hours of community service, minimum 100 hours of
+            physician shadowing over the last three to four years, minimum 50
+            hours of patient exposure, and research is a must.
+          </p>
+        </li>
+      </ul>
+    </div>
     <script>
-      document.getElementById("navBob").innerHTML= "Hello, "+localStorage.getItem("username")+". <i class='bi bi-person-circle'></i>";
+      document.getElementById("navBob").innerHTML =
+        "Hello, " +
+        localStorage.getItem("username") +
+        ". <i class='bi bi-person-circle'></i>";
     </script>
   </body>
 </html>
