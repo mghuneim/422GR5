@@ -63,13 +63,13 @@ a {
   text-align: center;
 }
 .navbar {
-  background-color: rgb(120, 108, 184);
+  background-color: rgb(118, 107, 180);
 }
 .nav.navbar-nav ul {
   align-items: center;
 }
 .nav.navbar-nav li a {
-  color: rgb(66, 56, 136);
+  color: rgb(3, 2, 12);
   font-size: 25px;
   font-family: sans-serif;
 }
