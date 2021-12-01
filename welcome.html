@@ -63,6 +63,7 @@
                  <!-- placeholder user name -->
                  <!-- <i class="bi bi-person-circle"></i> -->
               </li>
+              <li id="navBob" class="nav-item" style="padding-top: 0.6vw;"></li>
           </ul>
         </div>
     </nav>
@@ -100,5 +101,6 @@
       i.className="bi bi-person-circle";
       document.getElementById("li").appendChild(i);
       document.getElementById("h1").innerHTML="Welcome, "+localStorage.getItem("username")+".";
+      document.getElementById("navBob").innerHTML= "Hello, "+localStorage.getItem("username")+". <i class='bi bi-person-circle'></i>";
     </script>
 </html>
