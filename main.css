@@ -6,7 +6,7 @@
 --glaucous-2: #6a7bd4ff; */
 
 body {
-  background-color: #6d91cfff;
+  background-color: #bddfff;
 }
 
 #welcomePage {
@@ -16,7 +16,7 @@ body {
   padding-bottom: 10em;
 }
 #welcomePage .btn {
-  background-color: white;
+  background-color: rgb(227, 206, 253);
   text-align: center;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 a {
-  color: rgb(175, 188, 255);
+  color: rgb(100, 76, 187);
 }
 
 /* NAVBAR */
@@ -63,19 +63,19 @@ a {
   text-align: center;
 }
 .navbar {
-  background-color: #6a7bd4ff;
+  background-color: rgb(120, 108, 184);
 }
 .nav.navbar-nav ul {
   align-items: center;
 }
 .nav.navbar-nav li a {
-  color: darkslateblue;
+  color: rgb(66, 56, 136);
   font-size: 25px;
   font-family: sans-serif;
 }
 #navhead {
   font-size: 3vw;
-  color: rgb(190, 213, 252);
+  color: rgb(108, 94, 170);
 }
 
 #searchTitle {
@@ -98,7 +98,7 @@ a {
 
 .btn-outline-primary {
   position: relative;
-  background-color: #6c86d2ff;
+  background-color: rgb(134, 115, 194);
   color: black;
 }
 
@@ -107,6 +107,7 @@ a {
   width: 1500px;
   row-gap: 1em;
   column-gap: 20px;
+  align-items: center;
 }
 
 .containerBox ul {
@@ -116,7 +117,7 @@ a {
 .containerBox ul li {
   width: 400px;
   height: 300px;
-  background-color: #6f9bcdff;
+  background-color: rgb(184, 176, 218);
   border-style: solid;
   float: left;
   margin-right: 50px;
@@ -154,16 +155,16 @@ a {
 }
 
 .schoolText ul {
-  margin: 50px;
+  margin: 30px;
 }
 
 .schoolText ul li {
   width: 600px;
   height: 300px;
-  background-color: #6f9bcdff;
+  background-color: rgb(184, 176, 218);
   border-style: solid;
   float: left;
-  margin-right: 50px;
+  margin-right: 30px;
   margin-bottom: 20px;
 }
 
@@ -184,7 +185,7 @@ a {
 }
 
 #rbtn1 {
-  background-color: #6c86d2ff;
+  background-color: rgb(156, 141, 223);
   border: 2px solid #70a6caff;
   margin: 10px;
   position: absolute;
@@ -192,7 +193,7 @@ a {
 }
 
 #rbtn1:hover {
-  background-color: #70a6caff;
+  background-color: rgb(144, 152, 224);
   border-color: #6d91cfff;
 }
 
@@ -209,13 +210,13 @@ a {
 }
 
 .lbtn {
-  background-color: #6c86d2ff;
+  background-color: rgb(156, 141, 223);
   border: 1px solid #70a6caff;
   margin-left: 2px;
 }
 
 .lbtn:hover {
-  background-color: #70a6caff;
+  background-color: rgb(156, 141, 223);
   border-color: #6d91cfff;
 }
 
@@ -275,7 +276,7 @@ ul {
 }
 
 .head {
-  color: rgb(63, 86, 126);
+  color: rgb(74, 75, 141);
   text-align: center;
   font-size: 50px;
 }
@@ -300,7 +301,7 @@ ul {
 
 .school-list li {
   display: inline-block;
-  color: rgb(31, 41, 90);
+  color: rgb(58, 46, 110);
   text-align: center;
   width: 13.6%;
   width: 200px;
@@ -334,7 +335,7 @@ button {
   vertical-align: top;
   font-weight: bold;
   border-style: solid;
-  border-color: #706cff;
+  border-color: #8564e2;
   border-width: 1px;
 }
 #days td {
@@ -342,7 +343,7 @@ button {
   width: 110px;
   font-size: large;
   border-style: solid;
-  border-color: #706cff;
+  border-color: #8250c4;
   border-width: 1px;
 }
 #dates p {
@@ -350,7 +351,7 @@ button {
 }
 #calHead td {
   text-align: center;
-  background-color: #706cff;
+  background-color: #8454c4;
   width: 110px;
 }
 
@@ -367,7 +368,7 @@ button {
   height: auto;
 }
 .ui-datepicker .ui-datepicker-header {
-  background-color: #6a7bd4ff;
+  background-color: rgb(125, 116, 202);
 }
 .ui-datepicker .ui-datepicker-title {
   font-family: Roboto;
@@ -376,7 +377,7 @@ button {
   width: 59.5vw;
   height: 70vh;
   border-style: solid;
-  border-color: #6a7bd4ff;
+  border-color: rgb(112, 92, 199);
   border-width: 5px;
 }
 .ui-widget.ui-widget-content,
@@ -390,21 +391,21 @@ button {
 .ui-state-default {
   height: 100%;
   border-style: solid;
-  border-color: #6a7bd4ff;
+  border-color: rgb(100, 71, 170);
   border-width: 1px;
 }
 .ui-datepicker th {
   border-style: solid;
   border-color: #6a7bd4ff;
   border-width: 1px;
-  background-color: rgb(124, 155, 207);
+  background-color: rgb(166, 143, 218);
 }
 .ui-datepicker-current-day .ui-state-active {
   background-color: rgb(190, 213, 252);
   color: white;
 }
 .ui-datepicker-today a.ui-state-highlight {
-  background-color: #6a7bd4ff;
+  background-color: rgb(122, 106, 212);
   color: white;
 }
 .ui-datepicker td a:after {
