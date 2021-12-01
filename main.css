@@ -168,6 +168,15 @@ a {
   margin-bottom: 20px;
 }
 
+/**/
+.button-solid{
+  border: none;
+  background-color: #bddfff;
+}
+button-solid:focus {
+  border: none;
+  outline: none;
+}
 #box6,
 #box8 {
   margin-left: 40px;
