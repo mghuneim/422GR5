@@ -182,13 +182,7 @@ button-solid:focus {
   margin-left: 40px;
 }
 
-.register {
-  position: absolute;
-  top: 40%;
-  left: 70%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+
 .register1 {
   padding: 5px;
 }
@@ -196,9 +190,7 @@ button-solid:focus {
 #rbtn1 {
   background-color: rgb(156, 141, 223);
   border: 2px solid #70a6caff;
-  margin: 10px;
-  position: absolute;
-  left: 30%;
+  margin:10px;
 }
 
 #rbtn1:hover {
@@ -211,16 +203,9 @@ button-solid:focus {
   left: 60%;
 }
 
-#img1 {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  width: 50%;
-}
-
 .lbtn {
   background-color: rgb(156, 141, 223);
-  border: 1px solid #70a6caff;
+  border: 2px solid #70a6caff;
   margin-left: 2px;
 }
 

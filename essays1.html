@@ -98,50 +98,53 @@
         </ul>
       </div>
     </nav>
-    <table class="table table-borderless table-sm">
-      <tr>
-        <td><h2>Essays:</h2></td>
-      </tr>
-      <tr>
-        <td class="hf">School Name:Loyoler</td>
-      </tr>
-      <tr>
-        <td class="df">Personal Statement:</td>
-        <td>
-          <input type="file" value="Choose File" id="1" />
-          <button class="lbtn" onclick="msg(1)">Upload</button>
-        </td>
-      </tr>
-      <tr>
-        <td class="df">Experience Description:</td>
-        <td>
-          <input type="file" value="Choose File" id="2" />
-          <button class="lbtn" onclick="msg(2)">Upload</button>
-        </td>
-      </tr>
-      <tr>
-        <td class="df">MD-PHD Essay:</td>
-        <td>
-          <input type="file" value="Choose File" id="3" />
-          <button class="lbtn" onclick="msg(3)">Upload</button>
-        </td>
-      </tr>
-      <tr>
-        <td class="df">Secondary Essay:</td>
-        <td>
-          <input type="file" value="Choose File" id="4" />
-          <button class="lbtn" onclick="msg(4)">Upload</button>
-        </td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-          <button class="lbtn" onclick="location.href='essays2.html'">
-            Submit
-          </button>
-        </td>
-      </tr>
-    </table>
+    <form action="essays2.html">
+      <table class="table table-borderless table-sm">
+        <tr>
+          <td><h2>Essays:</h2></td>
+        </tr>
+        <tr>
+          <td class="hf">School Name:Loyoler</td>
+        </tr>
+        <tr>
+          <td class="df">Personal Statement:</td>
+          <td>
+            <input type="file" value="Choose File" id="1" required />
+            <button class="lbtn">Upload</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="df">Experience Description:</td>
+          <td>
+            <input type="file" value="Choose File" id="2" required/>
+            <button class="lbtn" onclick="msg(2)">Upload</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="df">MD-PHD Essay:</td>
+          <td>
+            <input type="file" value="Choose File" id="3" required/>
+            <button class="lbtn" onclick="msg(3)">Upload</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="df">Secondary Essay:</td>
+          <td>
+            <input type="file" value="Choose File" id="4" required/>
+            <button class="lbtn" onclick="msg(4)">Upload</button>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button class="lbtn">
+            <!-- onclick="location.href='essays2.html'" -->
+              Submit
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
     <script>
       function msg(id) {
         console.log(id);
@@ -152,6 +155,9 @@
           alert("File uploaded successfully");
         }
       }
+    </script>
+    <script>
+      
     </script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

@@ -15,7 +15,42 @@
 
   <body id="register">
     <!--PLACEHOLDERS-->
-    <img src="roel-dierckens-LzGjfk1SeDw-unsplash.jpg" alt="" id="img1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-8 col-md-8 col-lg-8 col-sm-8">
+          <img src="roel-dierckens-LzGjfk1SeDw-unsplash.jpg" alt="Image" class="img-fluid rounded">
+        </div>
+        <div class="col-4 col-md-4 col-lg-4 col-sm-4">
+          <form action="welcome.html">
+            <div class="col-6 col-md-6 col-lg-6 col-sm-6">
+              <label for="usrname">Username:</label>   
+              <input type="text" id="usrname" value="" required>
+            </div>
+            <div class="col-6 col-md-6 col-lg-6 col-sm-6">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="col-6 col-md-6 col-lg-6 col-sm-6">
+              <label for="npwd">Password:</label>
+              <input type="password" id="npwd" required>
+            </div>
+            <div class="col-6 col-md-6 col-lg-6 col-sm-6">
+              <label for="pwd">Confirm Password:</label>
+              <input type="password" id="pwd">
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="col-8 col-md-8 col-lg-8 col-sm-8">
+                <button id="rbtn1">Register</button>
+              </div>
+            </div>
+            <div>
+              Already have an account?<a href="login.html"> Sign In</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <img src="roel-dierckens-LzGjfk1SeDw-unsplash.jpg" alt="" id="img1">
     <form action="welcome.html">
       <table class="register">
         <tr class="register1">
@@ -40,7 +75,7 @@
         <tr>
           <td id="rbtn2" style="padding-left: 5px; font-size: small;">Already have an account?<a href="login.html"> Sign In</a></td>
         </tr>
-      </table>
+      </table> -->
       <script>
         document.getElementById("usrname").addEventListener("change",function(){
           username=document.getElementById("usrname").value;
