@@ -91,7 +91,7 @@
     </div>
     </body>
     <script>
-      document.getElementById("h1").textContent="Welcome"+" "+localStorage.getItem("username");
+      document.getElementById("h1").innerHTML="Welcome, "+localStorage.getItem("username")+".";
       document.getElementById("navBob").innerHTML= "Hello, "+localStorage.getItem("username")+". <i class='bi bi-person-circle'></i>";
     </script>
 </html>
