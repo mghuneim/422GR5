@@ -205,7 +205,7 @@ button-solid:focus {
 
 .lbtn {
   background-color: rgb(156, 141, 223);
-  border: 1px solid #70a6caff;
+  border: 2px solid #70a6caff;
   margin-left: 2px;
 }
 
