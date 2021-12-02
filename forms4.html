@@ -58,35 +58,82 @@
                   <a class="dropdown-item" href="deadlines.html">Deadlines</a>
                   <a class="dropdown-item" href="tasks.html">Tasks</a>
                 </div>
+                <li id="navBob" class="nav-item" style="padding-top: 0.6vw;"></li>
               </li>
-              <li id="navBob" class="nav-item" style="padding-top: 0.6vw;"></li>
           </ul>
         </div>
     </nav>
-    <table class="table table-borderless text-center">
+    <table class="table table-borderless">
       <tr>
-        <td><h2>Forms:</h2></td>
+        <td>
+          <h2>Forms</h2>
+        </td>
+      </tr> 
+      <tr>
+        <td class="hf">
+          School Name: DePow
+        </td>
       </tr>
-      <tr class="hf">
-        <td>School Names:</th>
-        <td>Status:</th>
+      <tr>
+        <td class="df">
+          Transcripts:
+        </td>
+        <td>
+            <input type="button" value="View" class="lbtn" onclick="msg()">
+        </td>
       </tr>
-      <tr class="df">
-        <td>Loyoler</td>
-        <td>Not Yet Submitted
-          <button class="lbtn" onclick="location.href='forms1.html'">Upload Forms</button></td>
+      <tr>
+        <td class="df">
+          Resume:
+        </td>
+        <td>
+            <input type="button" value="View" class="lbtn" onclick="msg()">
+        </td>
       </tr>
-      <tr class="df">
-        <td>UID</td>
-        <td>Submitted
-          <button class="lbtn"  onclick="location.href='forms3.html'">View Forms</button></td>
+      <tr>
+        <td class="df">
+          GPA:
+        </td>
+        <td>
+          <input type="text" value="3.5" value="126"><span style="margin:2px">/4.00</span>
+        </td>
       </tr>
-      <tr class="df">
-        <td>DePow</td>
-        <td>Submitted
-          <button class="lbtn"  onclick="location.href='forms4.html'">View Forms</button></td>
+      <tr>
+        <td class="df">
+          MCAT:
+        </td>
+        <td>
+          Section1: <input type="text" value="126" readonly><span style="margin:2px">/132</span>
+        </td>
+        <td>
+          Section2: <input type="text" value="126" readonly><span style="margin:2px">/132</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+        </td>
+        <td>
+          Section3: <input type="text" value="126" readonly><span style="margin:2px" >/132</span>
+        </td>
+        <td>
+          Section4: <input type="text" value="126" readonly><span style="margin:2px">/132</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          
+        </td>
+        <td>
+          <button class="lbtn" onclick="location.href='forms.html'">Back to Forms</button>
+        </td>
       </tr>
     </table>
+    <script>
+        function msg(){
+          alert("No Document Found");
+        }
+      </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>

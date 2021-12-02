@@ -45,7 +45,7 @@
               <a class="dropdown-item" href="list.html">List</a>
             </div>
           </li>
-          <li class="nav-item dropdown active">
+          <li class="nav-item dropdown">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -61,7 +61,7 @@
               <a class="dropdown-item" href="decisions.html">Decisions</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
+          <li class="nav-item dropdown active">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -98,54 +98,48 @@
         </ul>
       </div>
     </nav>
-    <form action="essays.html">
-      <table class="table table-borderless table-sm">
+    <form action="letters.html">
+      <table class="table table-borderless text-center">
         <tr>
-          <td><h2>Essays:</h2></td>
-        </tr>
-        <tr id="schoolname">
-          <td class="hf">School Name:UID</td>
-        </tr>
-        <tr>
-          <td class="df">Personal Statement:</td>
           <td>
-            <input type="button" value="View Document" class="lbtn" onclick="msg()">
+            <h2>Letters of Recommendation</h2>
           </td>
         </tr>
         <tr>
-          <td class="df">Experience Description:</td>
+          <td class="hf">School Name:Loyoler</td>
+        </tr>
+        <tr class="text-center">
           <td>
-            <input type="button" value="View Document" class="lbtn" onclick="msg()">
+            Letter 1
+            <input type="button" value="View" class="lbtn" onclick="msg()">
+          </td>
+        </tr>
+        <tr class="text-center">
+          <td>
+            Letter 2
+            <input type="button" value="View" class="lbtn" onclick="msg()">
+          </td>
+        </tr>
+        <tr class="text-center">
+          <td>
+            Letter 3
+            <input type="button" value="View" class="lbtn" onclick="msg()">
           </td>
         </tr>
         <tr>
-          <td class="df">MD-PHD Essay:</td>
-          <td>
-            <input type="button" value="View Document" class="lbtn" onclick="msg()">
-          </td>
-        </tr>
-        <tr>
-          <td class="df">Secondary Essay:</td>
-          <td>
-            <input type="button" value="View Document" class="lbtn" onclick="msg()">
-          </td>
-        </tr>
-        <tr>
-          <td></td>
           <td>
             <button class="lbtn">
-            <!-- onclick="location.href='essays2.html'" -->
-            Back to Essays
+              Back to Letters
             </button>
           </td>
         </tr>
       </table>
     </form>
     <script>
-      function msg(){
-        alert("No Document Found");
-      }
-    </script>
+        function msg(){
+          alert("No Document Found");
+        }
+      </script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
