@@ -42,7 +42,7 @@ body {
 }
 
 a {
-  color: rgb(100, 76, 187);
+  color: rgb(64, 42, 146);
 }
 
 /* NAVBAR */
@@ -63,7 +63,7 @@ a {
   text-align: center;
 }
 .navbar {
-  background-color: rgb(118, 107, 180);
+  background-color: rgb(133, 116, 221);
 }
 .nav.navbar-nav ul {
   align-items: center;
@@ -75,7 +75,7 @@ a {
 }
 #navhead {
   font-size: 3vw;
-  color: rgb(108, 94, 170);
+  color: rgb(96, 68, 219);
 }
 
 #searchTitle {
@@ -98,7 +98,7 @@ a {
 
 .btn-outline-primary {
   position: relative;
-  background-color: rgb(134, 115, 194);
+  background-color: rgb(148, 120, 238);
   color: black;
 }
 
@@ -117,7 +117,7 @@ a {
 .containerBox ul li {
   width: 400px;
   height: 300px;
-  background-color: rgb(184, 176, 218);
+  background-color: rgb(150, 130, 236);
   border-style: solid;
   float: left;
   margin-right: 50px;
@@ -161,7 +161,7 @@ a {
 .schoolText ul li {
   width: 600px;
   height: 300px;
-  background-color: rgb(184, 176, 218);
+  background-color: rgb(168, 151, 243);
   border-style: solid;
   float: left;
   margin-right: 30px;
@@ -169,7 +169,7 @@ a {
 }
 
 /**/
-.button-solid{
+.button-solid {
   border: none;
   background-color: #bddfff;
 }
@@ -182,7 +182,6 @@ button-solid:focus {
   margin-left: 40px;
 }
 
-
 .register1 {
   padding: 5px;
 }
@@ -190,7 +189,7 @@ button-solid:focus {
 #rbtn1 {
   background-color: rgb(156, 141, 223);
   border: 2px solid #70a6caff;
-  margin:10px;
+  margin: 10px;
 }
 
 #rbtn1:hover {
@@ -244,9 +243,15 @@ ul {
 .tas {
   list-style-type: disc;
 }
-.h2 {
-  text-align: center;
+
+.tass {
+  list-style-type: disc;
 }
+
+.h2 {
+  text-align: left;
+}
+
 .col {
   float: left;
   width: 50%;
@@ -254,6 +259,11 @@ ul {
 
 .col2 {
   float: left;
+  width: 50%;
+}
+
+.col3 {
+  float: right;
   width: 50%;
 }
 
@@ -410,9 +420,10 @@ button {
   font-weight: bold;
 }
 
-.arrowsInModal{
+.arrowsInModal {
   background-color: #6c86d2ff;
 }
-.head .btn, .modal-footer .btn{
+.head .btn,
+.modal-footer .btn {
   background-color: #70a6caff;
 }
