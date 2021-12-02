@@ -120,50 +120,69 @@
       Tasks
     </h1>
 
+    <script>
+      function disableButtons(a, b, c, d, e, f, theBox, time_date ) {
+        document.getElementById(a).disabled = true;
+        document.getElementById(b).disabled = true;
+        document.getElementById(c).disabled = true;
+        document.getElementById(d).disabled = true;
+        document.getElementById(e).disabled = true;
+        document.getElementById(f).disabled = true;
+        document.getElementById(theBox).innerHTML = time_date;
+      }
+    </script>
+
     <div class="tasks">
       <div class="col">
         <div class="col2">
           <h2>Interview Schedular</h2>
           <h5>UID</h5>
+          <p id="uInterview">Interview time: </p>
           <ul>
-            <li>November 12 9:00 am</li>
-            <li>November 12 10:00 am</li>
-            <li>November 12 11:00 am</li>
-            <li>November 12 12:00 pm</li>
-            <li>November 12 1:00 pm</li>
-            <li>November 12 2:00 pm</li>
-          </ul>
+            <li><button class="button-solid" id="u1" onclick="disableButtons('u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'uInterview', 'Interview time: November 12 9:00 am')">November 12 9:00 am</button></li>
+            <li><button class="button-solid" id="u2" onclick="disableButtons('u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'uInterview', 'Interview time: November 12 10:00 am')">November 12 10:00 am</button></li>
+            <li><button class="button-solid" id="u3" onclick="disableButtons('u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'uInterview', 'Interview time: November 12 11:00 am')">November 12 11:00 am</button></li>
+            <li><button class="button-solid" id="u4" onclick="disableButtons('u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'uInterview', 'Interview time: November 12 12:00 pm')">November 12 12:00 pm</button></li>
+            <li><button class="button-solid" id="u5" onclick="disableButtons('u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'uInterview', 'Interview time: November 12 1:00 pm')">November 12 1:00 pm</button></li>
+            <li><button class="button-solid" id="u6" onclick="disableButtons('u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'uInterview', 'Interview time: November 12 2:00 pm')">November 12 2:00 pm</button></li>
+          </ul> 
+
           <h5>Jarvard University</h5>
+          <p id="jInterview">Interview time: </p>
           <ul>
-            <li>November 12 9:00 am</li>
-            <li>November 12 10:00 am</li>
-            <li>November 12 11:00 am</li>
-            <li>November 12 12:00 pm</li>
-            <li>November 12 1:00 pm</li>
-            <li>November 12 2:00 pm</li>
-          </ul>
+            <li><button class="button-solid" id="j1" onclick="disableButtons('j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'jInterview', 'Interview time: November 12 9:00 am')">November 12 9:00 am</button></li>
+            <li><button class="button-solid" id="j2" onclick="disableButtons('j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'jInterview', 'Interview time: November 12 10:00 am')">November 12 10:00 am</button></li>
+            <li><button class="button-solid" id="j3" onclick="disableButtons('j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'jInterview', 'Interview time: November 12 11:00 am')">November 12 11:00 am</button></li>
+            <li><button class="button-solid" id="j4" onclick="disableButtons('j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'jInterview', 'Interview time: November 12 12:00 am')">November 12 12:00 pm</button></li>
+            <li><button class="button-solid" id="j5" onclick="disableButtons('j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'jInterview', 'Interview time: November 12 1:00 pm')">November 12 1:00 pm</button></li>
+            <li><button class="button-solid" id="j6" onclick="disableButtons('j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'jInterview', 'Interview time: November 12 2:00 pm')">November 12 2:00 pm</button></li>
+          </ul> 
         </div>
         <div class="col2">
           <h5><br /><br />Loyoler University</h5>
+          <p id="lInterview">Interview time: </p>
           <ul>
-            <li>November 12 9:00 am</li>
-            <li>November 12 10:00 am</li>
-            <li>November 12 11:00 am</li>
-            <li>November 12 12:00 pm</li>
-            <li>November 12 1:00 pm</li>
-            <li>November 12 2:00 pm</li>
-          </ul>
+            <li><button class="button-solid" id="l1" onclick="disableButtons('l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'lInterview', 'Interview time: November 12 9:00 am')">November 12 9:00 am</button></li>
+            <li><button class="button-solid" id="l2" onclick="disableButtons('l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'lInterview', 'Interview time: November 12 10:00 am')">November 12 10:00 am</button></li>
+            <li><button class="button-solid" id="l3" onclick="disableButtons('l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'lInterview', 'Interview time: November 12 11:00 am')">November 12 11:00 am</button></li>
+            <li><button class="button-solid" id="l4" onclick="disableButtons('l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'lInterview', 'Interview time: November 12 12:00 pm')">November 12 12:00 pm</button></li>
+            <li><button class="button-solid" id="l5" onclick="disableButtons('l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'lInterview', 'Interview time: November 12 1:00 pm')">November 12 1:00 pm</button></li>
+            <li><button class="button-solid" id="l6" onclick="disableButtons('l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'lInterview', 'Interview time: November 12 2:00 pm')">November 12 2:00 pm</button></li>
+          </ul> 
           <h5>Drown University</h5>
+          <p id="dInterview">Interview time: </p>
           <ul>
-            <li>November 12 9:00 am</li>
-            <li>November 12 10:00 am</li>
-            <li>November 12 11:00 am</li>
-            <li>November 12 12:00 pm</li>
-            <li>November 12 1:00 pm</li>
-            <li>November 12 2:00 pm</li>
-          </ul>
+            <li><button class="button-solid" id="d1" onclick="disableButtons('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'dInterview', 'Interview time: November 12 9:00 am')">November 12 9:00 am</button></li>
+            <li><button class="button-solid" id="d2" onclick="disableButtons('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'dInterview', 'Interview time: November 12 10:00 am')">November 12 10:00 am</button></li>
+            <li><button class="button-solid" id="d3" onclick="disableButtons('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'dInterview', 'Interview time: November 12 11:00 am')">November 12 11:00 am</button></li>
+            <li><button class="button-solid" id="d4" onclick="disableButtons('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'dInterview', 'Interview time: November 12 12:00 pm')">November 12 12:00 pm</button></li>
+            <li><button class="button-solid" id="d5" onclick="disableButtons('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'dInterview', 'Interview time: November 12 1:00 pm')">November 12 1:00 pm</button></li>
+            <li><button class="button-solid" id="d6" onclick="disableButtons('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'dInterview', 'Interview time: November 12 2:00 pm')">November 12 2:00 pm</button></li>
+          </ul> 
         </div>
       </div>
+
+
       <div class="col">
         <h2>To-Do</h2>
         <ul class="tas"></ul>

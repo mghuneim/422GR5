@@ -168,6 +168,15 @@ a {
   margin-bottom: 20px;
 }
 
+/**/
+.button-solid{
+  border: none;
+  background-color: #bddfff;
+}
+button-solid:focus {
+  border: none;
+  outline: none;
+}
 #box6,
 #box8 {
   margin-left: 40px;
@@ -289,8 +298,8 @@ ul {
   color: rgb(58, 46, 110);
   text-align: center;
   width: 13.6%;
-  width: 200px;
-  height: 50px;
+  width: 250px;
+  height: 300px;
 }
 
 button {
@@ -399,4 +408,11 @@ button {
   text-align: center;
   font-size: small;
   font-weight: bold;
+}
+
+.arrowsInModal{
+  background-color: #6c86d2ff;
+}
+.head .btn, .modal-footer .btn{
+  background-color: #70a6caff;
 }

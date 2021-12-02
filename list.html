@@ -115,27 +115,112 @@
     <!--NAVBAR END-->
 
     <!--header -->
-    <h1 class="head">
-      <br />
-      School List <br />
-    </h1>
+    <h1 class="head"> <br> Favorited Schools <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter" style="color:white;">
+      ⇅
+    </button></h1> 
+    
+    <!--FROM BOOTSTRAP SITE-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sort schools by:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-auto">
+                  <input id="1up" type="submit" class="btn" value="↑"></input>
+                </div>
+                <div class="col" style="text-align: center;">
+                  <p>Name</p>
+                </div>
+                <div class="col-md-auto">
+                  <input id="1down" type="submit" class="btn" value="↓"></input>
+                </div>
+              </div>
 
+              <div class="row">
+                <div class="col-md-auto">
+                  <input id="2up" type="submit" class="btn" value="↑"></input>
+                </div>
+                <div class="col" style="text-align: center;">
+                  <p>Tuition</p>
+                </div>
+                <div class="col-md-auto">
+                  <input id="2down" type="submit" class="btn" value="↓"></input>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-auto">
+                  <input id="3up" type="submit" class="btn" value="↑"></input>
+                </div>
+                <div class="col" style="text-align: center;">
+                  <p>Date Added</p>
+                </div>
+                <div class="col-md-auto">
+                  <input id="3down" type="submit" class="btn" value="↓"></input>
+                </div>
+              </div>
+            </div>
+
+            <!-- add attribute? -->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--results  list-->
     <div>
       <ul class="school-list">
-        <li>Awful College of Medicine</li>
-        <li>Depar University</li>
-        <li>Decent College of Medicine</li>
-        <li>Drown University</li>
-        <li>Eastwestern University</li>
-        <li>Jarvard University</li>
-        <li>Loyoler University</li>
-        <li>Partmouth University</li>
-        <li>Spectacular Medical School</li>
-        <li>UID</li>
-        <li>University of Bexas</li>
-        <li>University of Northern Dalifornia</li>
-        <li>University of Clorida</li>
+        <li> <a class="button-solid" href="results3.html">
+          <img
+            id="logo3"
+            src="schoollogo3.png"
+            alt="School Logo 2"
+            class="center"
+            style="width: 200px; height: 200px; margin-bottom: 20px"
+          />Depow University</a></li>
+            <li> <a class="button-solid" href="results4.html">
+              <img
+                id="logo4"
+                src="schoollogo4.png"
+                alt="School Logo 4"
+                class="center"
+                style="width: 200px; height: 200px; margin-bottom: 20px"
+              />Jarvard University</a></li>
+              <li><a class="button-solid" href="results.html">
+                <img
+                  id="logo1"
+                  src="schoollogo.png"
+                  alt="School Logo 1"
+                  class="center"
+                  style="width: 200px; height: 200px; margin-bottom: 20px"
+                />Loyoler University</a></li>
+                <li><a class="button-solid" href="results2.html">
+                  <img
+                    id="logo2"
+                    src="schoollogo2.png"
+                    alt="School Logo 2"
+                    class="center"
+                    style="width: 200px; height: 200px; margin-bottom: 20px"
+                  />UID</button></li>
+                  <li><a class="button-solid" href="results5.html">
+                    <img
+                      id="logo5"
+                      src="schoollogo5.png"
+                      alt="School Logo 5"
+                      class="center"
+                      style="width: 200px; height: 200px; margin-bottom: 20px"
+                    />Awful College of Medicine</button></li>
       </ul>
     </div>
     <script>
@@ -143,6 +228,57 @@
         "Hello, " +
         localStorage.getItem("username") +
         ". <i class='bi bi-person-circle'></i>";
+
+      $('#1up').click(function(){
+        $("#1up").toggleClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+      });
+      $('#1down').click(function(){
+        $("#1down").toggleClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+      });
+
+      $('#2up').click(function(){
+        $("#2up").toggleClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+      });
+      $('#2down').click(function(){
+        $("#2down").toggleClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+      });
+
+      $('#3up').click(function(){
+        $("#3up").toggleClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+      });
+      $('#3down').click(function(){
+        $("#3down").toggleClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+      });
     </script>
   </body>
 </html>
