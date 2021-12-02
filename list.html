@@ -115,11 +115,69 @@
     <!--NAVBAR END-->
 
     <!--header -->
-    <h1 class="head">
-      <br />
-      School List <br />
-    </h1>
+    <h1 class="head"> <br> School List <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter" style="color:white;">
+      ⇅
+    </button></h1> 
+    
+    <!--FROM BOOTSTRAP SITE-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Sort schools by:</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-auto">
+                  <input id="1up" type="submit" class="btn" value="↑"></input>
+                </div>
+                <div class="col" style="text-align: center;">
+                  <p>Name</p>
+                </div>
+                <div class="col-md-auto">
+                  <input id="1down" type="submit" class="btn" value="↓"></input>
+                </div>
+              </div>
 
+              <div class="row">
+                <div class="col-md-auto">
+                  <input id="2up" type="submit" class="btn" value="↑"></input>
+                </div>
+                <div class="col" style="text-align: center;">
+                  <p>Tuition</p>
+                </div>
+                <div class="col-md-auto">
+                  <input id="2down" type="submit" class="btn" value="↓"></input>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-auto">
+                  <input id="3up" type="submit" class="btn" value="↑"></input>
+                </div>
+                <div class="col" style="text-align: center;">
+                  <p>Date Added</p>
+                </div>
+                <div class="col-md-auto">
+                  <input id="3down" type="submit" class="btn" value="↓"></input>
+                </div>
+              </div>
+            </div>
+
+            <!-- add attribute? -->
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--results  list-->
     <div>
       <ul class="school-list">
@@ -143,6 +201,57 @@
         "Hello, " +
         localStorage.getItem("username") +
         ". <i class='bi bi-person-circle'></i>";
+
+      $('#1up').click(function(){
+        $("#1up").toggleClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+      });
+      $('#1down').click(function(){
+        $("#1down").toggleClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+      });
+
+      $('#2up').click(function(){
+        $("#2up").toggleClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+      });
+      $('#2down').click(function(){
+        $("#2down").toggleClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+      });
+
+      $('#3up').click(function(){
+        $("#3up").toggleClass('arrowsInModal');
+        $("#3down").removeClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+      });
+      $('#3down').click(function(){
+        $("#3down").toggleClass('arrowsInModal');
+        $("#3up").removeClass('arrowsInModal');
+        $("#1up").removeClass('arrowsInModal');
+        $("#1down").removeClass('arrowsInModal');
+        $("#2down").removeClass('arrowsInModal');
+        $("#2up").removeClass('arrowsInModal');
+      });
     </script>
   </body>
 </html>
