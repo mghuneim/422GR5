@@ -117,7 +117,7 @@ a {
 .containerBox ul li {
   width: 400px;
   height: 300px;
-  background-color: rgb(150, 130, 236);
+  background-color: rgb(184, 169, 243);
   border-style: solid;
   float: left;
   margin-right: 50px;
@@ -413,7 +413,7 @@ button {
   color: white;
 }
 .ui-datepicker td a:after {
-  content: "today";
+  content: "";
   display: block;
   text-align: center;
   font-size: small;

@@ -128,12 +128,70 @@
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script>
       $(function () {
-        $("#datepicker").datepicker();
+        $("#datepicker").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          minDate: 0,
+          onSelect: function (date, dp) {
+            updateDatePickerCells();
+          },
+          onChangeMonthYear: function (month, year, dp) {
+            updateDatePickerCells();
+          },
+          beforeShow: function (elem, dp) {
+            updateDatePickerCells();
+          },
+        });
+        updateDatePickerCells();
       });
       document.getElementById("navBob").innerHTML =
         "Hello, " +
         localStorage.getItem("username") +
         ". <i class='bi bi-person-circle'></i>";
+    </script>
+    <script>
+      function updateDatePickerCells(dp) {
+        setTimeout(function () {
+          var cellContents = {
+            17: "Southeast--Interview",
+            21: "Bexas--Letter",
+            26: "Dalifornia--Interview",
+            27: "Clorida--Application",
+            29: "Eastwester--Application",
+            30: "DePar--Application",
+          };
+
+          $(".ui-datepicker td > *").each(function (idx, elem) {
+            var value = cellContents[idx + 1] || 0;
+
+            var className = "datepicker-content-" + value.toString();
+
+            if (value == 0)
+              addCSSRule(
+                ".ui-datepicker td a." + className + ':after {content: "";}'
+              );
+            else
+              addCSSRule(
+                ".ui-datepicker td a." +
+                  className +
+                  ':after {content: "' +
+                  value +
+                  '";}'
+              );
+
+            $(this).addClass(className);
+          });
+        }, 0);
+      }
+    </script>
+    <script>
+      var dynamicCSSRules = [];
+      function addCSSRule(rule) {
+        if ($.inArray(rule, dynamicCSSRules) == -1) {
+          $("head").append("<style>" + rule + "</style>");
+          dynamicCSSRules.push(rule);
+        }
+      }
     </script>
     <div id="datepicker"></div>
     <!-- get message from elsewhere thru html5 storage
