@@ -132,12 +132,15 @@
       }
     </script>
 
-    <div class="tasks">
+    <div >
+      <div class="int-head">
+        <h2 >Interview Scheduler</h2>
+        <text>Click a time to select an interview slot<br><br></text>
+      </div>
       <div class="col">
         <div class="col2">
-          <h2>Interview Schedular</h2>
           <h5>UID</h5>
-          <p id="uInterview">Interview time: </p>
+          <p id="uInterview">Interview time: Not yet selected</p>
           <ul>
             <li><button class="button-solid" id="u1" onclick="disableButtons('u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'uInterview', 'Interview time: November 12 9:00 am')">November 12 9:00 am</button></li>
             <li><button class="button-solid" id="u2" onclick="disableButtons('u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'uInterview', 'Interview time: November 12 10:00 am')">November 12 10:00 am</button></li>
@@ -148,7 +151,7 @@
           </ul> 
 
           <h5>Jarvard University</h5>
-          <p id="jInterview">Interview time: </p>
+          <p id="jInterview">Interview time: Not yet selected</p>
           <ul>
             <li><button class="button-solid" id="j1" onclick="disableButtons('j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'jInterview', 'Interview time: November 12 9:00 am')">November 12 9:00 am</button></li>
             <li><button class="button-solid" id="j2" onclick="disableButtons('j1', 'j2', 'j3', 'j4', 'j5', 'j6', 'jInterview', 'Interview time: November 12 10:00 am')">November 12 10:00 am</button></li>
@@ -159,8 +162,8 @@
           </ul> 
         </div>
         <div class="col2">
-          <h5><br /><br />Loyoler University</h5>
-          <p id="lInterview">Interview time: </p>
+          <h5>Loyoler University</h5>
+          <p id="lInterview">Interview time: Not yet selected</p>
           <ul>
             <li><button class="button-solid" id="l1" onclick="disableButtons('l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'lInterview', 'Interview time: November 12 9:00 am')">November 12 9:00 am</button></li>
             <li><button class="button-solid" id="l2" onclick="disableButtons('l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'lInterview', 'Interview time: November 12 10:00 am')">November 12 10:00 am</button></li>
@@ -170,7 +173,7 @@
             <li><button class="button-solid" id="l6" onclick="disableButtons('l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'lInterview', 'Interview time: November 12 2:00 pm')">November 12 2:00 pm</button></li>
           </ul> 
           <h5>Drown University</h5>
-          <p id="dInterview">Interview time: </p>
+          <p id="dInterview">Interview time: Not yet selected</p>
           <ul>
             <li><button class="button-solid" id="d1" onclick="disableButtons('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'dInterview', 'Interview time: November 12 9:00 am')">November 12 9:00 am</button></li>
             <li><button class="button-solid" id="d2" onclick="disableButtons('d1', 'd2', 'd3', 'd4', 'd5', 'd6', 'dInterview', 'Interview time: November 12 10:00 am')">November 12 10:00 am</button></li>
@@ -183,7 +186,7 @@
       </div>
 
 
-      <div class="col">
+      <div class="col3">
         <h2>To-Do</h2>
         <ul class="tas"></ul>
         <div class="input-group mb-3">
@@ -205,7 +208,18 @@
             </button>
           </div>
         </div>
+        <h2> <br> <br>       Deadlines </h2>   
+        <ul class="tass">
+          <li><b>November 21: </b>University of Bexas letters of recommendation</li>
+          <li><b>November 21: </b>Partmouth University primary application </li>
+          <li><b>November 26: </b>University of Northern Dalifornia interview </li>
+          <li><b>November 27: </b>University of Clorida secondary application </li>
+          <li><b>November 29: </b>Eastwester University primary application </li>
+          <li><b>November 30: </b>Depar University primary application </li>
+        </ul>
       </div>
+
+
     </div>
     <script>
       $("#addTask").click(function () {
@@ -226,6 +240,8 @@
           }
         }
       });
+
+
       document.getElementById("navBob").innerHTML =
         "Hello, " +
         localStorage.getItem("username") +

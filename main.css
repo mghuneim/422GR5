@@ -259,9 +259,16 @@ ul {
 .tas {
   list-style-type: disc;
 }
-.h2 {
-  text-align: center;
+
+.tass {
+  list-style-type: disc;
 }
+
+.h2 {
+  text-align: left;
+}
+
+
 .col {
   float: left;
   width: 50%;
@@ -272,10 +279,16 @@ ul {
   width: 50%;
 }
 
+.col3 {
+  float: right;
+  width: 50%;
+}
+
 .column {
   float: left;
   width: 50%;
 }
+
 
 /* Clear floats after the columns */
 .row:after {
